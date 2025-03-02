@@ -41,7 +41,7 @@
     }
 
     .card-custom {
-      margin: 50 px;
+      margin: 50px;
       margin-top: 100px;
       background-color: rgba(255, 255, 255, 0.15);
       padding: 40px;
@@ -93,6 +93,12 @@
 </head>
 
 <body>
+  <script>
+    if (window.innerWidth < 1024) {
+      window.location.href = '/mobile-not-supported'; // Redireciona para uma página de erro ou notificação
+    }
+  </script>
+
   <div class="logo-container">
     <img src="/images/Imagem do WhatsApp de 2025-02-25 à(s) 18.09.48_54ce6760.jpg" alt="Vector Lab">
     <div class="logo-text">VECTOR LAB<br><small>COMUNICAÇÃO VISUAL, WEB & SYSTEMS</small></div>
