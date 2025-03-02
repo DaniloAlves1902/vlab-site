@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos - Vector Lab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style/home.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .title {
+            margin-top: 200px;
+            font-size: 0px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, #0026ff, #9c9c9c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 50px;
+        }
+
+        .plans-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            max-width: 1200px;
+            margin-top: 30px;
+        }
+
+        .plan-card {
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            /* Reduzi o padding */
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+            width: 45%;
+            /* Ajustei a largura */
+            min-width: 350px;
+            /* Ajustei o tamanho mínimo */
+            max-width: 450px;
+            /* Ajustei o tamanho máximo */
+            text-align: left;
+            color: white;
+            transition: transform 0.3s ease-in-out;
+            margin-top: 30px;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .plan-card h3 {
+            font-size: 24px;
+            /* Reduzi o tamanho da fonte */
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .plan-card p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .plan-card ul {
+
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .plan-card ul li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .btn-custom {
+            background: linear-gradient(90deg, #0059ff, #00ccff);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: 0.3s;
+            display: inline-block;
+            margin-top: 30px;
+            box-shadow: 0px 4px 15px rgba(0, 89, 255, 0.5);
+        }
+
+        .btn-custom:hover {
+            background: linear-gradient(90deg, #0044cc, #0099cc);
+            box-shadow: 0px 6px 20px rgba(0, 89, 255, 0.8);
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 992px) {
+            .plans-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .plan-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo-container">
+        <img src="/images/Imagem do WhatsApp de 2025-02-25 à(s) 18.09.48_54ce6760.jpg" alt="Vector Lab">
+        <div class="logo-text">VECTOR LAB<br><small>COMUNICAÇÃO VISUAL, WEB & SYSTEMS</small></div>
+    </div>
+    <div class="header">
+        <a href="home.html">Início</a>
+        <a href="contato.html">Contato</a>
+        <a href="quem-somos.html">Quem Somos</a>
+    </div>
+    <div class="content">
+        <div class="title">Nossos Planos</div>
+        <div class="plans-container">
+            <!-- Plano Básico -->
+            <div class="plan-card">
+                <h3>🟢 Plano Básico – R$ 300</h3>
+                <ul>
+                    <li>✔ Site estático, simples e responsivo (até 5 páginas)</li>
+                    <li>✔ 1 mês de suporte para correção de bugs</li>
+                    <li>✔ Tempo de produção: 2 semanas a 1 mês</li>
+                    <li>❌ Sem manutenção inclusa (alterações pagas à parte)</li>
+                </ul>
+                <p><b>Extras opcionais:</b></p>
+                <ul>
+                    <li>➕ + R$ 25 por página extra (acima de 5 páginas)</li>
+                    <li>➕ + R$ 40/mês para manutenção básica (troca de textos e imagens)</li>
+                </ul>
+            </div>
+
+            <!-- Plano Intermediário -->
+            <div class="plan-card">
+                <h3>🔵 Plano Intermediário – R$ 600</h3>
+                <ul>
+                    <li>✔ Site personalizado, responsivo, com até 5 páginas</li>
+                    <li>✔ 2 meses de suporte para pequenas correções</li>
+                    <li>✔ 1 atualização gratuita (troca de texto/imagens dentro do período)</li>
+                    <li>✔ Tempo de produção: 3 semanas a 1 mês</li>
+                    <li>❌ Funcionalidades dinâmicas não inclusas</li>
+                </ul>
+                <p><b>Extras opcionais:</b></p>
+                <ul>
+                    <li>➕ + R$ 50 por página extra (acima de 5 páginas)</li>
+                    <li>➕ + R$ 80/mês para manutenção (atualizações e pequenas mudanças)</li>
+                </ul>
+            </div>
+
+            <!-- Plano Avançado -->
+            <div class="plan-card">
+                <h3>🔴 Plano Avançado – R$ 1.500+</h3>
+                <ul>
+                    <li>✔ Site completo e dinâmico, até 7 páginas</li>
+                    <li>✔ Painel administrativo (caso necessário)</li>
+                    <li>✔ Integração com formulários, redes sociais e Google Analytics</li>
+                    <li>✔ 3 meses de suporte e pequenas atualizações</li>
+                    <li>✔ Manutenção gratuita no primeiro mês</li>
+                    <li>✔ Tempo de produção: 1 a 2 meses, podendo variar conforme a complexidade do projeto.</li>
+                </ul>
+                <p><b>Extras opcionais:</b></p>
+                <ul>
+                    <li>➕ + R$ 80 por página extra (acima de 7 páginas)</li>
+                    <li>➕ + R$ 120/mês para manutenção e atualizações maiores</li>
+                </ul>
+            </div>
+        </div>
+        <a href="contato.html" class="btn-custom">Fale Conosco</a>
+    </div>
+</body>
+
+</html>

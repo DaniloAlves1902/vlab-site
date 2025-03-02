@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vector Lab</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style/home.css">
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .vector-title {
+      margin: 50px;
+      font-size: 50px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      background: linear-gradient(90deg, #0026ff, #9c9c9c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1400px;
+      margin-top: 30px;
+    }
+
+    .card-custom {
+      margin: 50 px;
+      margin-top: 100px;
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+      width: 48%;
+      min-width: 450px;
+      max-width: 600px;
+      text-align: left;
+      color: white;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card-custom:hover {
+      transform: translateY(-10px);
+    }
+
+    .btn-custom {
+      background: linear-gradient(90deg, #0059ff, #00ccff);
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 15px 35px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-block;
+      margin-top: 30px;
+      box-shadow: 0px 4px 15px rgba(0, 89, 255, 0.5);
+    }
+
+    .btn-custom:hover {
+      background: linear-gradient(90deg, #0044cc, #0099cc);
+      box-shadow: 0px 6px 20px rgba(0, 89, 255, 0.8);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 992px) {
+      .cards-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card-custom {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="logo-container">
+    <img src="/images/Imagem do WhatsApp de 2025-02-25 à(s) 18.09.48_54ce6760.jpg" alt="Vector Lab">
+    <div class="logo-text">VECTOR LAB<br><small>COMUNICAÇÃO VISUAL, WEB & SYSTEMS</small></div>
+  </div>
+  <div class="header">
+    <a href="/templates/servicos.html">Nosso Serviço</a>
+    <a href="contato.html">Contato</a>
+    <a href="quem-somos.html">Quem Somos</a>
+    <a href="planos.html">Nossos Planos</a>
+  </div>
+  <div class="content">
+    <div class="cards-container">
+      <div class="card-custom">
+        <h3>Sobre Nós</h3>
+        <p>
+          A <b>Vector Lab</b> é uma empresa especializada em <b>comunicação visual, desenvolvimento web e sistemas
+            personalizados</b>.
+          Criamos soluções digitais inovadoras para impulsionar marcas e negócios, desenvolvendo sites modernos, bots
+          inteligentes e designs gráficos impactantes.
+        </p>
+        <p>
+          Nosso compromisso é oferecer serviços de alta qualidade, utilizando tecnologia de ponta para garantir
+          desempenho, inovação e satisfação dos nossos clientes.
+        </p>
+      </div>
+
+      <div class="card-custom">
+        <h3>Nosso Objetivo</h3>
+        <p>
+          Nossa missão é <b>transformar ideias em realidade digital</b>, criando experiências únicas e eficientes para
+          empresas e empreendedores.
+        </p>
+        <p>
+          Buscamos sempre <b>inovar</b> e trazer soluções personalizadas que atendam às necessidades específicas de cada
+          cliente, garantindo impacto visual e funcionalidade excepcionais.
+        </p>
+      </div>
+    </div>
+    <a href="servicos.html" class="btn-custom">Saiba Mais</a>
+  </div>
+</body>
+
+</html>
